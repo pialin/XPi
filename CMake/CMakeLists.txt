@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)		#最低的CMake版本要求
 project(XPi)					#定义项目名称
+set (CMAKE_CXX_STANDARD 11)			#添加C++11支持
 find_package(OpenCV REQUIRED)			#寻找所需的OpenCV库，可能需要将OpenCV_DIR变量设置为包含OpenCVConfig.cmake文件的路径
 message(STATUS "OpenCV library status:")	#OpenCVConfig.cmake中设定了一些关于OpenCV的变量的值，比如OpenCV的版本信息、库所在路径、头文件所在路径等
 message(STATUS "    version: ${OpenCV_VERSION}")
